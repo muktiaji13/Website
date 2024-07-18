@@ -35,10 +35,12 @@ body {
 
 h1 {
     color: gold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 h2 {
     color: gold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .links {
@@ -61,22 +63,46 @@ h2 {
     background-color: #25D366;
 }
 
+.whatsapp:hover{
+    background-color: #1EBE5B;
+}
+
 .youtube {
     background-color: #FF0000;
+}
+
+.youtube:hover {
+    background-color: #CC0000;
 }
 
 .instagram {
     background-color: #C13584;
 }
 
+.instagram:hover {
+    background-color: #A12B6F;
+}
+
 .facebook {
-    background-color: blue;
+    background-color: #1877F2;
+}
+
+.facebook:hover {
+    background-color: #145DBF;
 }
 
 .tiktok {
     background-color: #010101;
 }
 
+.tiktok:hover {
+    background-color: #000000;
+}
+
 .telegram {
-    background-color: #0088cc;
+    background-color: #0088CC;
+}
+
+.telegram:hover {
+    background-color: #0077B5;
 }
