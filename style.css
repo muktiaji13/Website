@@ -1,28 +1,104 @@
-.icon img {
-    border-radius: 50%;
-}
-
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: rgb(255, 123, 0);
+    background: #020418;
     color: white;
     text-align: center;
+    overflow: hidden;
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.bulan {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 15%;
+}
+
+.bintang {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.awan1, .awan2 {
+    position: absolute;
+    width: 15vw; /* Ukuran default awan1 */
+    animation: moveClouds linear infinite;
+}
+
+.awan2 {
+    width: 20vw; /* Ukuran default awan2 */
+}
+
+@keyframes moveCloudsLeft {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes moveCloudsRight {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@media (max-width: 600px) {
+    .bulan {
+        width: 25%;
+    }
+
+    .awan1 {
+        width: 30vw;
+    }
+
+    .awan2 {
+        width: 35vw;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .bulan {
+        width: 20%;
+    }
+
+    .awan1 {
+        width: 20vw;
+    }
+
+    .awan2 {
+        width: 25vw;
+    }
 }
 
 .container {
+    position: relative;
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-}
-
-.header img {
-    width: 100%;
-    border-radius: 10px;
+    z-index: 1;
 }
 
 .profile {
-    margin-top: -125px;
+    margin-top: 50px;
     text-align: center;
 }
 
@@ -34,12 +110,12 @@ body {
 }
 
 h1 {
-    color: gold;
+    color: whitesmoke;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 h2 {
-    color: gold;
+    color: whitesmoke;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
@@ -56,14 +132,14 @@ h2 {
     text-decoration: none;
     color: white;
     font-size: 1.2em;
-    border: 1px solid black
+    border: 1px solid black;
 }
 
 .whatsapp {
     background-color: #25D366;
 }
 
-.whatsapp:hover{
+.whatsapp:hover {
     background-color: #1EBE5B;
 }
 
